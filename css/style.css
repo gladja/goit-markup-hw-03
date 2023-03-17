@@ -16,6 +16,8 @@
 /*util none point*/
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /*util letter-spacing*/
@@ -26,6 +28,7 @@
 
 /*global font, size, color */
 body {
+    margin: 0;
     background: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -36,8 +39,20 @@ body {
 
 }
 
+/*global container with 1128px*/
+.container {
+    width: 1128px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 1px solid tomato;
+}
+
 /*global button without color*/
 .btn {
+    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5em;
@@ -46,7 +61,13 @@ body {
     font-family: "Roboto", sans-serif
 }
 
-/*global section title all*/
+/*global section*/
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/*global section title*/
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -68,12 +89,25 @@ body {
 
 /*global for p*/
 .text {
+    margin: 0;
     font-size: 16px;
     color: var(--font-color);
 }
 
+.container.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav.wrapper {
+    display: flex;
+    align-items: center;
+}
 /*logo*/
 .logo {
+    margin-right: 76px;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -88,13 +122,44 @@ body {
 }
 
 /*nav*/
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item {
+    margin-right: 40px;
+    display: inline-block;
+}
+
+.site-nav .item:last-child {
+    margin-right: 0;
+
+}
+
 .site-nav a {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-weight: 500;
     color: var(--font-title-color);
 }
 
 .adr {
     font-style: normal;
+}
+
+.site-adr {
+    display: flex;
+
+    outline: 1px solid tomato;
+}
+
+.site-adr .item {
+    margin-right: 40px;
+}
+
+.site-adr .item:last-child {
+    margin-right: 0;
 }
 
 .site-adr a {
@@ -114,18 +179,22 @@ body {
 /*hero*/
 .hero {
     background: var(--font-title-color);
+    text-align: center;
 }
 
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 48px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07em;
     color: var(--colot-fon-white);
-    text-align: center;
 }
 
 /*button color page studio*/
 .btn-primary {
+    padding: 16px 32px;
+    border: 1px solid transparent;
     color: var(--colot-fon-white);
     background: var(--color-logo);
 }
@@ -145,6 +214,25 @@ body {
 .btn-second:focus {
     background: var(--color-btn-hover);
     color: var(--colot-fon-white);
+}
+
+/*about list*/
+.about {
+    display: flex;
+}
+
+.about-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.about .item {
+    width: calc((100% - 72px) / 4);
+    margin-right: 24px;
+}
+
+.about .item:last-child {
+    margin-right: 0;
 }
 
 /*out team*/

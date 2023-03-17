@@ -8,60 +8,65 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <header>
-	<nav>
-		<a class="logo link" href="./index.html">Web<span>Studio</span></a>
-		<ul class="site-nav list">
-			<li><a class="link" href="./index.html">Studio</a></li>
-			<li><a class="link" href="./portfolio.html">Portfolio</a></li>
-			<li><a class="link" href="">Contacts</a></li>
-		</ul>
-	</nav>
-	<address class="adr">
-		<ul class="site-adr list">
-			<li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-			<li><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-		</ul>
-	</address>
+	<div class="container wrapper">
+		<nav class="nav wrapper">
+			<a class="logo link" href="./index.html">Web<span>Studio</span></a>
+			<ul class="site-nav list">
+				<li class="item"><a class="link" href="./index.html">Studio</a></li>
+				<li class="item"><a class="link" href="./portfolio.html">Portfolio</a></li>
+				<li class="item"><a class="link" href="">Contacts</a></li>
+			</ul>
+		</nav>
+		<address class="adr">
+			<ul class="site-adr list">
+				<li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+				<li class="item"><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+			</ul>
+		</address>
+	</div>
 </header>
 <main>
-<!--	hero-->
+	<!--	hero-->
 	<section class="hero">
 		<h1 class="hero-title space">
 			Effective Solutions for Your Business
 		</h1>
 		<button class="btn btn-primary" type="button">Order Service</button>
 	</section>
-<!--about for us-->
-	<section class="section">
+	<!--about for us-->
+	<section class="section container">
 		<h2 hidden class="section-title">About for us</h2>
 		<ul class="about list">
-			<li>
+			<li class="item">
 				<h3 class="about-title space">Strategy</h3>
 				<p class="text">Our goal is to identify the business problem to walk away with the perfect and creative
 					solution. </p>
 			</li>
-			<li>
+			<li class="item">
 				<h3 class="about-title space">Punctuality</h3>
-				<p class="text">Bring the key message to the brand's audience for the best price within the shortest possible
+				<p class="text">Bring the key message to the brand's audience for the best price within the shortest
+					possible
 					time.</p>
 			</li>
-			<li>
+			<li class="item">
 				<h3 class="about-title space">Diligence</h3>
-				<p class="text">Research and confirm brands that present the strongest digital growth opportunities and minimize
+				<p class="text">Research and confirm brands that present the strongest digital growth opportunities and
+					minimize
 					risk.</p>
 			</li>
-			<li>
+			<li class="item">
 				<h3 class="about-title space">Technologies</h3>
 				<p class="text">Design practice focused on digital experiences. We bring forth a deep passion for
 					problem-solving.</p>
 			</li>
 		</ul>
 	</section>
-<!--	What are we doing-->
+	<!--	What are we doing-->
 	<section class="section">
 		<h2 class="section-title">
 			What are we doing
@@ -72,7 +77,7 @@
 			<li><img src="./images/img3.jpg" alt="web application" width="360"></li>
 		</ul>
 	</section>
-<!--	Our-->
+	<!--	Our-->
 	<section class="section background">
 		<h2 class="section-title space">
 			Our Team
