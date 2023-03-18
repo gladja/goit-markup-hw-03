@@ -23,7 +23,6 @@
 /*util letter-spacing*/
 .space {
     letter-spacing: 0.02em;
-
 }
 
 /*global font, size, color */
@@ -40,8 +39,11 @@ body {
 }
 
 /*global section*/
-.section {
+.section.first {
     padding-top: 120px;
+}
+
+.section {
     padding-bottom: 120px;
 }
 
@@ -53,7 +55,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    outline: 1px solid tomato;
+    /*outline: 1px solid tomato;*/
 }
 
 /*global button without color*/
@@ -107,6 +109,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 /*logo*/
 .logo {
     margin-right: 76px;
@@ -121,7 +124,7 @@ body {
 }
 
 .logo span {
-    color: var( --font-title-color);
+    color: var(--font-title-color);
 }
 
 /*nav*/
@@ -153,8 +156,6 @@ body {
 
 .site-adr {
     display: flex;
-
-    outline: 1px solid tomato;
 }
 
 .site-adr .item {
@@ -209,6 +210,8 @@ body {
 
 /*button color page portfolio*/
 .btn-second {
+    padding: 12px 24px;
+    border: 1px solid transparent;
     color: var(--color-logo);
     background: var(--color-fon);
 }
@@ -277,7 +280,8 @@ body {
     margin-top: 0;
     margin-bottom: 8px;
 }
-.item-wrap {
+
+.team .wrap {
     text-align: center;
     width: 232px;
     margin-left: auto;
@@ -285,12 +289,77 @@ body {
     margin-bottom: 32px;
 }
 
-
-/*footer*/
+/** footer*/
 .footer {
     background: var(--font-title-color);
 }
 
+.footer-wrap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .footer .footer-text {
     color: var(--color-fon);
+}
+
+.footer a {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 16px;
+}
+
+.footer-text {
+    width: 264px;
+}
+
+/*portfolio*/
+.filter {
+    display: flex;
+    justify-content: center;
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+
+.filter .item {
+    margin-right: 24px;
+}
+
+.filter .item:last-child {
+    margin-right: 0;
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-item {
+    margin-right: 24px;
+    margin-bottom: 48px;
+
+    outline: 1px solid tomato;
+}
+
+.work-item:nth-child(n + 7) {
+    margin-bottom: 0;
+}
+
+.work-item:nth-child(3n + 3) {
+    margin-right: 0;
+}
+
+.works .img {
+    display: block;
+}
+
+.works .wrap {
+    padding: 16px 32px;
+    max-width: 296px;
+}
+
+.works-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+
 }
