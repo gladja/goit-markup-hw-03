@@ -337,8 +337,6 @@ body {
 .work-item {
     margin-right: 24px;
     margin-bottom: 48px;
-
-    outline: 1px solid tomato;
 }
 
 .work-item:nth-child(n + 7) {
@@ -356,6 +354,9 @@ body {
 .works .wrap {
     padding: 16px 32px;
     max-width: 296px;
+    border-bottom:  1px dotted gray;
+    border-left: 1px dotted gray;
+    border-right: 1px dotted gray;
 }
 
 .works-title {
