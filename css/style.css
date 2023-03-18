@@ -39,6 +39,12 @@ body {
 
 }
 
+/*global section*/
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 /*global container with 1128px*/
 .container {
     width: 1128px;
@@ -61,14 +67,11 @@ body {
     font-family: "Roboto", sans-serif
 }
 
-/*global section*/
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
 /*global section title*/
 .section-title {
+    margin-top: 0;
+    margin-bottom: 72px;
+    padding: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11em;
@@ -235,10 +238,53 @@ body {
     margin-right: 0;
 }
 
+.project {
+    display: flex;
+}
+
+.project .img {
+    display: block;
+}
+
+.project .item {
+    margin-right: 24px;
+
+}
+
+.project .item:last-child {
+    margin-right: 0;
+}
+
 /*out team*/
 .background {
     background: var(--color-fon);
 }
+
+.team {
+    display: flex;
+}
+
+.team .img {
+    display: block;
+    margin-bottom: 32px;
+}
+
+.team .item {
+    margin-right: 24px;
+}
+
+.team-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.item-wrap {
+    text-align: center;
+    width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
 
 /*footer*/
 .footer {
